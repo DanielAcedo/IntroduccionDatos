@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Ej. Introduccion Datos</string>
     <string name="menu_title">Tema 1</string>
+    <string name="nada"></string>
     <string name="ej1_title">ConversiónMoneda</string>
+    <string name="txv_Euros_text">Euros</string>
+    <string name="txv_Dolares_text">Dólares</string>
+    <string name="btn_ActualizarRatio_text">Actualizar divisas</string>
+    <string name="txv_InfoDivisa_text_correcto">El ratio de divisa actual es: \n</string>
+    <string name="btn_InfoDivisa_text_conectando">Conectando al servidor... </string>
+    <string name="txv_InfoDivisa_text_error">Error al conectar al servidor</string>
 </resources>

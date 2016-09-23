@@ -10,12 +10,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.danielacedo.tema1.Ejercicio1Activity">
 
-    <Button
-        android:text="Button"
+    <TextView
+        android:text="@string/txv_Euros_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/txv_Euros"
+        android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:id="@+id/button" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|numberDecimal"
+        android:ems="10"
+        android:id="@+id/edt_Euros"
+        android:layout_below="@+id/txv_Euros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="@string/txv_Dolares_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/txv_Dolares"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/edt_Euros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|numberDecimal"
+        android:ems="10"
+        android:id="@+id/edt_Dolares"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/txv_Dolares"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/nada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_InfoDivisa"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/btn_ActualizarRatio"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/btn_ActualizarRatio_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:id="@+id/btn_ActualizarRatio"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

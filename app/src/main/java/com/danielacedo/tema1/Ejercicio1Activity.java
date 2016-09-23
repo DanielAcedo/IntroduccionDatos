@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -21,19 +23,37 @@ import java.net.URL;
 
 public class Ejercicio1Activity extends AppCompatActivity {
 
-    private String urlApiRatio = "http://api.fkhkhjixer.io/latest";
+    private String urlApiRatio = "http://api.fixer.io/latest";
     private String codDivisa = "USD";
     private double ratioActual = 0.0;
+
+    TextView txv_InfoDivisa, txv_Euros, txv_Dolares;
+    EditText edt_Dolares, edt_Euros;
+    Button btn_ActualizarRatio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle(R.string.ej1_title);
         setContentView(R.layout.activity_ejercicio1);
+        txv_InfoDivisa = (TextView)findViewById(R.id.txv_InfoDivisa);
+        txv_Euros = (TextView)findViewById(R.id.txv_Euros);
+        txv_Dolares = (TextView)findViewById(R.id.txv_Dolares);
+        edt_Euros = (EditText)findViewById(R.id.edt_Euros);
+        edt_Dolares = (EditText)findViewById(R.id.edt_Dolares);
+        btn_ActualizarRatio = (Button)findViewById(R.id.btn_ActualizarRatio);
+
+        //Llamar al servidor para coger los datos del ratio de divisas
+        ActualizarDivisas();
     }
 
     public void onClick(View v)  {
-       new getHttpResponse().execute(urlApiRatio);
+        ActualizarDivisas();
+    }
+
+    private void ActualizarDivisas(){
+        btn_ActualizarRatio.setText(R.string.btn_InfoDivisa_text_conectando);
+        new getHttpResponse().execute(urlApiRatio);
     }
 
     public void Mostrar(){
@@ -49,6 +69,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
         String msg=null;
         int responseCode;
+        boolean error;
 
         @Override
         protected String doInBackground(String... params) {
@@ -77,33 +98,43 @@ public class Ejercicio1Activity extends AppCompatActivity {
                 }
 
                 br.close();
+                conection.disconnect();
                 msg=response.toString();
 
             } catch (MalformedURLException e) {
-               Mostrar(e.getMessage());
+
+                error=true;
             } catch (IOException e){
-                Mostrar(e.getMessage());
+
+                error=true;
             }
-            finally{
-                if (conection != null){
-                    conection.disconnect();
-                }
-            }
+
 
             return null;
         }
 
         @Override
         protected void onPostExecute(String url){
-            try{
-                JSONObject json = new JSONObject(msg);
-                JSONObject ratios = json.getJSONObject("rates");
-                ratioActual = ratios.getDouble("USD");
-                Mostrar();
-            }catch (JSONException e){
+            if(msg != null && error != true){
+                try{
+                    JSONObject json = new JSONObject(msg);
+                    JSONObject ratios = json.getJSONObject("rates");
+                    ratioActual = ratios.getDouble(codDivisa);
 
+                }catch (JSONException e){
+                    Mostrar("Error al recibir el ratio de divisas del servidor");
+                    error=true;
+                }
             }
 
+            if(error==true){
+                txv_InfoDivisa.setText(R.string.txv_InfoDivisa_text_error);
+            }else{
+
+                txv_InfoDivisa.setText("El ratio de divisa actual es: \n"+String.valueOf(ratioActual)+" EUR/"+codDivisa);
+            }
+
+            btn_ActualizarRatio.setText(R.string.btn_ActualizarRatio_text);
         }
     }
 }
