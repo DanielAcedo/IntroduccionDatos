@@ -23,6 +23,8 @@ import java.net.URL;
 
 public class Ejercicio1Activity extends AppCompatActivity {
 
+    static private final double RATIO_DEFECTO = 1.2;
+
     private String urlApiRatio = "http://api.fixer.io/latest";
     private String codDivisa = "USD";
     private double ratioActual = 0.0;
@@ -115,6 +117,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String url){
+            //Una vez recibida la respuesta GET con los datos, procesamos el JSON
             if(msg != null && error != true){
                 try{
                     JSONObject json = new JSONObject(msg);
@@ -122,15 +125,16 @@ public class Ejercicio1Activity extends AppCompatActivity {
                     ratioActual = ratios.getDouble(codDivisa);
 
                 }catch (JSONException e){
-                    Mostrar("Error al recibir el ratio de divisas del servidor");
                     error=true;
                 }
             }
 
+            //Si ha habido un error en la conexion o al procesar los datos se fija un ratio fijo.
             if(error==true){
                 txv_InfoDivisa.setText(R.string.txv_InfoDivisa_text_error);
+                ratioActual = RATIO_DEFECTO;
             }else{
-
+                //Si no, se actualiza la divisa
                 txv_InfoDivisa.setText("El ratio de divisa actual es: \n"+String.valueOf(ratioActual)+" EUR/"+codDivisa);
             }
 
