@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,37 +21,63 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Locale;
 
 public class Ejercicio1Activity extends AppCompatActivity {
 
-    static private final double RATIO_DEFECTO = 1.2;
-
     private String urlApiRatio = "http://api.fixer.io/latest";
-    private String codDivisa = "USD";
-    private double ratioActual = 0.0;
+
+    Conversion conversion = null;
 
     TextView txv_InfoDivisa, txv_Euros, txv_Dolares;
     EditText edt_Dolares, edt_Euros;
-    Button btn_ActualizarRatio;
+    RadioButton rbt_EurosADolares, rbt_DolaresAEuros;
+    Button btn_ActualizarRatio, btn_Convertir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle(R.string.ej1_title);
         setContentView(R.layout.activity_ejercicio1);
+
+        //Coger los Views
         txv_InfoDivisa = (TextView)findViewById(R.id.txv_InfoDivisa);
         txv_Euros = (TextView)findViewById(R.id.txv_Euros);
         txv_Dolares = (TextView)findViewById(R.id.txv_Dolares);
         edt_Euros = (EditText)findViewById(R.id.edt_Euros);
         edt_Dolares = (EditText)findViewById(R.id.edt_Dolares);
         btn_ActualizarRatio = (Button)findViewById(R.id.btn_ActualizarRatio);
+        btn_Convertir = (Button)findViewById(R.id.btn_Convertir);
+        rbt_DolaresAEuros = (RadioButton)findViewById(R.id.rbt_DolaresAEuros);
+        rbt_EurosADolares = (RadioButton)findViewById(R.id.rbt_EurosADolares);
 
+        //Inicializar valores
+
+        conversion = new Conversion();
+        edt_Dolares.setText("0");
+        edt_Euros.setText("0");
+        rbt_EurosADolares.setChecked(true);
         //Llamar al servidor para coger los datos del ratio de divisas
         ActualizarDivisas();
     }
 
     public void onClick(View v)  {
-        ActualizarDivisas();
+        switch (v.getId()){
+            case R.id.btn_ActualizarRatio:
+                ActualizarDivisas();
+                break;
+            case R.id.btn_Convertir:
+                if(rbt_DolaresAEuros.isChecked()){
+                    double dolares = conversion.ConvertirADivisa(Double.parseDouble(edt_Dolares.getText().toString()));
+                    edt_Dolares.setText(String.format(Locale.US,"%.2f", Double.parseDouble(edt_Dolares.getText().toString()))); //Añadimos los decimales si lo introducido es entero
+                    edt_Euros.setText(String.format(Locale.US, "%.2f", dolares)); //Se convierte con 2 decimales
+                }else if(rbt_EurosADolares.isChecked()){
+                    double euros = conversion.ConvertirAEuros(Double.parseDouble(edt_Euros.getText().toString()));
+                    edt_Euros.setText(String.format(Locale.US,"%.2f", Double.parseDouble(edt_Euros.getText().toString()))); //Añadimos los decimales si lo introducido es entero
+                    edt_Dolares.setText(String.format(Locale.US, "%.2f", euros));
+                }
+        }
+
     }
 
     private void ActualizarDivisas(){
@@ -58,9 +85,6 @@ public class Ejercicio1Activity extends AppCompatActivity {
         new getHttpResponse().execute(urlApiRatio);
     }
 
-    public void Mostrar(){
-        Toast.makeText(this, String.valueOf(ratioActual), Toast.LENGTH_SHORT).show();
-    }
 
     public void Mostrar(String msg){
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
@@ -122,7 +146,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
                 try{
                     JSONObject json = new JSONObject(msg);
                     JSONObject ratios = json.getJSONObject("rates");
-                    ratioActual = ratios.getDouble(codDivisa);
+                    conversion.setRatio(ratios.getDouble(conversion.getCodPais()));
 
                 }catch (JSONException e){
                     error=true;
@@ -132,10 +156,10 @@ public class Ejercicio1Activity extends AppCompatActivity {
             //Si ha habido un error en la conexion o al procesar los datos se fija un ratio fijo.
             if(error==true){
                 txv_InfoDivisa.setText(R.string.txv_InfoDivisa_text_error);
-                ratioActual = RATIO_DEFECTO;
+                conversion.setRatio(conversion.RATIO_DEFECTO);
             }else{
                 //Si no, se actualiza la divisa
-                txv_InfoDivisa.setText("El ratio de divisa actual es: \n"+String.valueOf(ratioActual)+" EUR/"+codDivisa);
+                txv_InfoDivisa.setText("El ratio de divisa actual es: \n"+String.valueOf(conversion.getRatio())+" EUR/"+conversion.getCodPais());
             }
 
             btn_ActualizarRatio.setText(R.string.btn_ActualizarRatio_text);
