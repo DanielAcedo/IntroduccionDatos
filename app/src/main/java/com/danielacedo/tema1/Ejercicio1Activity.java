@@ -38,7 +38,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle(R.string.ej1_title);
-
+        setContentView(R.layout.activity_ejercicio1);
 
         //Coger los Views
         txv_InfoDivisa = (TextView)findViewById(R.id.txv_InfoDivisa);
@@ -51,7 +51,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
         rbt_DolaresAEuros = (RadioButton)findViewById(R.id.rbt_DolaresAEuros);
         rbt_EurosADolares = (RadioButton)findViewById(R.id.rbt_EurosADolares);
 
-        setContentView(R.layout.activity_ejercicio1);
+
         //Inicializar valores
 
         conversion = new Conversion();
