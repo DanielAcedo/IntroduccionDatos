@@ -27,18 +27,18 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
     private String urlApiRatio = "http://api.fixer.io/latest";
 
-    Conversion conversion = null;
+    private Conversion conversion = null;
 
-    TextView txv_InfoDivisa, txv_Euros, txv_Dolares;
-    EditText edt_Dolares, edt_Euros;
-    RadioButton rbt_EurosADolares, rbt_DolaresAEuros;
-    Button btn_ActualizarRatio, btn_Convertir;
+    private TextView txv_InfoDivisa, txv_Euros, txv_Dolares;
+    private EditText edt_Dolares, edt_Euros;
+    private RadioButton rbt_EurosADolares, rbt_DolaresAEuros;
+    private Button btn_ActualizarRatio, btn_Convertir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle(R.string.ej1_title);
-        setContentView(R.layout.activity_ejercicio1);
+
 
         //Coger los Views
         txv_InfoDivisa = (TextView)findViewById(R.id.txv_InfoDivisa);
@@ -51,6 +51,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
         rbt_DolaresAEuros = (RadioButton)findViewById(R.id.rbt_DolaresAEuros);
         rbt_EurosADolares = (RadioButton)findViewById(R.id.rbt_EurosADolares);
 
+        setContentView(R.layout.activity_ejercicio1);
         //Inicializar valores
 
         conversion = new Conversion();
