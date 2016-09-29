@@ -13,9 +13,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -55,44 +53,60 @@ public class Ejercicio1Activity extends AppCompatActivity {
         //Inicializar valores
 
         conversion = new Conversion();
-        edt_Dolares.setText("0");
-        edt_Euros.setText("0");
+        edt_Dolares.setText("0.00");
+        edt_Euros.setText("0.00");
         rbt_EurosADolares.setChecked(true);
         //Llamar al servidor para coger los datos del ratio de divisas
-        ActualizarDivisas();
+        actualizarDivisas();
     }
 
     public void onClick(View v)  {
         switch (v.getId()){
             case R.id.btn_ActualizarRatio:
-                ActualizarDivisas();
+                actualizarDivisas();
                 break;
             case R.id.btn_Convertir:
                 if(rbt_DolaresAEuros.isChecked()){
-                    double dolares = conversion.ConvertirADivisa(Double.parseDouble(edt_Dolares.getText().toString()));
-                    edt_Dolares.setText(String.format(Locale.US,"%.2f", Double.parseDouble(edt_Dolares.getText().toString()))); //Añadimos los decimales si lo introducido es entero
-                    edt_Euros.setText(String.format(Locale.US, "%.2f", dolares)); //Se convierte con 2 decimales
+                    parsearDolares();
                 }else if(rbt_EurosADolares.isChecked()){
-                    double euros = conversion.ConvertirAEuros(Double.parseDouble(edt_Euros.getText().toString()));
-                    edt_Euros.setText(String.format(Locale.US,"%.2f", Double.parseDouble(edt_Euros.getText().toString()))); //Añadimos los decimales si lo introducido es entero
-                    edt_Dolares.setText(String.format(Locale.US, "%.2f", euros));
+                    parsearEuros();
                 }
         }
 
     }
 
-    private void ActualizarDivisas(){
+    private void parsearEuros(){
+        try{
+            double euros = conversion.ConvertirAEuros(Double.parseDouble(edt_Euros.getText().toString()));
+            edt_Euros.setText(String.format(Locale.US,"%.2f", String.valueOf(euros))); //Añadimos los decimales si lo introducido es entero
+            edt_Dolares.setText(String.format(Locale.US, "%.2f", euros));
+        }catch(NumberFormatException e){
+            mostrar(getResources().getString(R.string.parseEurosError));
+        }
+    }
+
+    private void parsearDolares(){
+        try{
+            double dolares = conversion.ConvertirADivisa(Double.parseDouble(edt_Dolares.getText().toString()));
+            edt_Dolares.setText(String.format(Locale.US,"%.2f", String.valueOf(dolares))); //Añadimos los decimales si lo introducido es entero
+            edt_Euros.setText(String.format(Locale.US, "%.2f", dolares)); //Se convierte con 2 decimales
+        }catch(NumberFormatException e){
+            mostrar(getResources().getString(R.string.parseDolaresError));
+        }
+    }
+
+    private void actualizarDivisas(){
         btn_ActualizarRatio.setText(R.string.btn_InfoDivisa_text_conectando);
-        new getHttpResponse().execute(urlApiRatio);
+        new GetHttpResponse().execute(urlApiRatio);
     }
 
 
-    public void Mostrar(String msg){
+    public void mostrar(String msg){
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     //Clase que ejecuta el método asíncrono para hacer la petición HTTP
-    public class getHttpResponse extends AsyncTask<String, String, String> {
+    public class GetHttpResponse extends AsyncTask<String, String, String> {
 
         String msg=null;
         int responseCode;
