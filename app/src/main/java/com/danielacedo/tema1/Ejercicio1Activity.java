@@ -77,9 +77,9 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
     private void parsearEuros(){
         try{
-            double euros = conversion.ConvertirAEuros(Double.parseDouble(edt_Euros.getText().toString()));
-            edt_Euros.setText(String.format(Locale.US,"%.2f", String.valueOf(euros))); //Añadimos los decimales si lo introducido es entero
-            edt_Dolares.setText(String.format(Locale.US, "%.2f", euros));
+            double euros = Double.parseDouble(edt_Euros.getText().toString());
+            edt_Euros.setText(String.format(Locale.US,"%.2f", euros)); //Añadimos los decimales si lo introducido es entero
+            edt_Dolares.setText(String.format(Locale.US, "%.2f", conversion.ConvertirADivisa(euros)));
         }catch(NumberFormatException e){
             mostrar(getResources().getString(R.string.parseEurosError));
         }
@@ -87,9 +87,9 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
     private void parsearDolares(){
         try{
-            double dolares = conversion.ConvertirADivisa(Double.parseDouble(edt_Dolares.getText().toString()));
-            edt_Dolares.setText(String.format(Locale.US,"%.2f", String.valueOf(dolares))); //Añadimos los decimales si lo introducido es entero
-            edt_Euros.setText(String.format(Locale.US, "%.2f", dolares)); //Se convierte con 2 decimales
+            double dolares = Double.parseDouble(edt_Dolares.getText().toString());
+            edt_Dolares.setText(String.format(Locale.US,"%.2f", dolares)); //Añadimos los decimales si lo introducido es entero
+            edt_Euros.setText(String.format(Locale.US, "%.2f", conversion.ConvertirAEuros(dolares))); //Se convierte con 2 decimales
         }catch(NumberFormatException e){
             mostrar(getResources().getString(R.string.parseDolaresError));
         }
@@ -170,11 +170,11 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
             //Si ha habido un error en la conexion o al procesar los datos se fija un ratio fijo.
             if(error==true){
-                txv_InfoDivisa.setText(R.string.txv_InfoDivisa_text_error);
                 conversion.setRatio(conversion.RATIO_DEFECTO);
+                txv_InfoDivisa.setText(getResources().getString(R.string.txv_InfoDivisa_text_error) + "\n" + getResources().getString(R.string.txv_InfoDivisa_text_correcto)+String.valueOf(conversion.getRatio())+" EUR/"+conversion.getCodPais());
             }else{
                 //Si no, se actualiza la divisa
-                txv_InfoDivisa.setText("El ratio de divisa actual es: \n"+String.valueOf(conversion.getRatio())+" EUR/"+conversion.getCodPais());
+                txv_InfoDivisa.setText(getResources().getString(R.string.txv_InfoDivisa_text_correcto)+String.valueOf(conversion.getRatio())+" EUR/"+conversion.getCodPais());
             }
 
             btn_ActualizarRatio.setText(R.string.btn_ActualizarRatio_text);

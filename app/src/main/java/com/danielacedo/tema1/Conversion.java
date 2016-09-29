@@ -34,11 +34,11 @@ public class Conversion {
     }
 
     public double ConvertirAEuros(double otraDivisa){
-        return otraDivisa*ratioActual;
+        return otraDivisa/ratioActual;
     }
 
     public double ConvertirADivisa(double euros){
-        return euros/ratioActual;
+        return euros*ratioActual;
     }
 
     public double getRatio(){
