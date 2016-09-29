@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Ej. Introduccion Datos</string>
-    <string name="menu_title">Tema 1</string>
     <string name="nada"></string>
+
+    <!-- Menu-->
+    <string name="menu_title">Tema 1</string>
+
+    <!-- Ejercicio 1-->
     <string name="ej1_title">ConversiónMoneda</string>
     <string name="txv_Euros_text">Euros</string>
     <string name="txv_Dolares_text">Dólares</string>
@@ -14,4 +18,7 @@
     <string name="btn_Convertir_text">Convertir</string>
     <string name="parseEurosError">Error al leer los euros introducidos, asegurate de que sea un número</string>
     <string name="parseDolaresError">Error al leer los dólares introducidos, asegurate de que sea un número</string>
+
+    <!-- Ejercicio 2-->
+    <string name="ej2_title">Conversor de centímetros a pulgadas</string>
 </resources>

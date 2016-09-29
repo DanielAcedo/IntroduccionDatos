@@ -15,10 +15,16 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void onClick (View v){
+        Intent intento;
         switch(v.getId()){
             case R.id.btn_Ejercicio1:
-                Intent intento = new Intent(this, Ejercicio1Activity.class);
+                intento = new Intent(this, Ejercicio1Activity.class);
                 startActivity(intento);
+                break;
+            case R.id.btn_Ejercicio2:
+                intento = new Intent(this, Ejercicio2Activity.class);
+                startActivity(intento);
+                break;
         }
     }
 }
