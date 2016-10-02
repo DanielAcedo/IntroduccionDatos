@@ -24,5 +24,6 @@
     <string name="btn_ConvertirCm_text">Convertir</string>
     <string name="txv_Cm_text_cm">Centímetros</string>
     <string name="txv_Cm_text_inches">Pulgadas</string>
+    <string name="btn_CambiarModo_text">Cambiar modo</string>
 
 </resources>

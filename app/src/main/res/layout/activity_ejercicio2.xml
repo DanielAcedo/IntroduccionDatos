@@ -24,7 +24,6 @@
         android:text="@string/txv_Cm_text_cm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_ConvertirCm"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="11dp"
@@ -32,32 +31,52 @@
         android:textSize="23sp"
         android:id="@+id/txv_Cm" />
 
-    <EditText
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/edt_Cm"
-        android:layout_weight="1"
-        android:layout_marginTop="142dp"
-        android:layout_below="@+id/ly_logo"
-        android:layout_alignLeft="@+id/txv_Cm"
-        android:layout_alignStart="@+id/txv_Cm"
-        android:background="@drawable/cm_edt_border_cm"
-        android:padding="5dp"
-        />
-
     <Button
         android:text="@string/btn_ConvertirCm_text"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/llo_Magnitudes"
         android:id="@+id/btn_ConvertirCm"
         android:textSize="17sp"
         android:layout_weight="1"
 
         android:layout_marginTop="53dp"
-        android:layout_alignTop="@+id/edt_Cm"
-        android:layout_alignLeft="@+id/edt_Cm"
-        android:layout_alignStart="@+id/edt_Cm" />
+        />
+
+    <Button
+        android:text="@string/btn_CambiarModo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_CambiarModo"
+        android:textSize="17sp"
+        android:layout_below="@+id/btn_ConvertirCm"
+        android:layout_alignLeft="@+id/btn_ConvertirCm"
+        android:layout_alignStart="@+id/btn_ConvertirCm"
+        android:layout_alignRight="@+id/btn_ConvertirCm"
+        android:layout_alignEnd="@+id/btn_ConvertirCm" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llo_Magnitudes"
+        android:gravity="top"
+        android:layout_below="@+id/txv_Cm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_Cm"
+            android:layout_weight="1"
+            android:layout_marginTop="142dp"
+            android:background="@drawable/cm_edt_border_cm"
+            android:padding="5dp"
+            />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -15,7 +15,7 @@ import java.util.Locale;
 public class Ejercicio2Activity extends AppCompatActivity {
     private static final double CONVERSION_CM_PULGADAS = 0.393701;
 
-    private Button btn_ConvertirCm;
+    private Button btn_ConvertirCm, btn_CambiarModo;
     private EditText edt_Cm;
     private TextView txv_Cm;
     private boolean modoCentimentros = true;
@@ -28,6 +28,7 @@ public class Ejercicio2Activity extends AppCompatActivity {
 
         //Initialize the Views
         btn_ConvertirCm = (Button)findViewById(R.id.btn_ConvertirCm);
+        btn_CambiarModo = (Button)findViewById(R.id.btn_CambiarModo);
         edt_Cm = (EditText)findViewById(R.id.edt_Cm);
         txv_Cm = (TextView)findViewById(R.id.txv_Cm);
 
@@ -41,31 +42,47 @@ public class Ejercicio2Activity extends AppCompatActivity {
              */
             @Override
             public void onClick(View v) {
-                if(modoCentimentros){
-                    try{
-                        double cm = Double.parseDouble(edt_Cm.getText().toString());
-                        edt_Cm.setText(String.format(Locale.US, "%.2f", cmToInches(cm)));
-                        edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_inch));
-                        txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_inches));
-                        modoCentimentros = false;
-                    }catch(NumberFormatException e){
-
-                    }
-                }else{
-                    try{
-                        double inches = Double.parseDouble(edt_Cm.getText().toString());
-                        edt_Cm.setText(String.format(Locale.US, "%.2f", inchesToCm(inches)));
-                        edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_cm));
-                        txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_cm));
-                        modoCentimentros = true;
-                    }catch(NumberFormatException e){
-
-                    }
-                }
-
-
+                clickConvertir();
             }
         });
+
+        btn_CambiarModo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                changeMode();
+            }
+        });
+    }
+
+    private void clickConvertir(){
+        if(modoCentimentros){
+            try{
+                double cm = Double.parseDouble(edt_Cm.getText().toString());
+                edt_Cm.setText(String.format(Locale.US, "%.2f", cmToInches(cm)));
+            }catch(NumberFormatException e){
+
+            }
+        }else{
+            try{
+                double inches = Double.parseDouble(edt_Cm.getText().toString());
+                edt_Cm.setText(String.format(Locale.US, "%.2f", inchesToCm(inches)));
+            }catch(NumberFormatException e){
+
+            }
+        }
+    }
+
+    private void changeMode(){
+        if(modoCentimentros){
+                edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_inch));
+                txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_inches));
+                modoCentimentros = false;
+
+        }else{
+                edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_cm));
+                txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_cm));
+                modoCentimentros = true;
+        }
     }
 
     double cmToInches(double cm){
