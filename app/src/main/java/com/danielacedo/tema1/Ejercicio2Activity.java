@@ -16,8 +16,8 @@ public class Ejercicio2Activity extends AppCompatActivity {
     private static final double CONVERSION_CM_PULGADAS = 0.393701;
 
     private Button btn_ConvertirCm, btn_CambiarModo;
-    private EditText edt_Cm;
-    private TextView txv_Cm;
+    private EditText edt_Cm, edt_Inches;
+    private TextView txv_Cm, txv_Inches;
     private boolean modoCentimentros = true;
 
     @Override
@@ -30,7 +30,9 @@ public class Ejercicio2Activity extends AppCompatActivity {
         btn_ConvertirCm = (Button)findViewById(R.id.btn_ConvertirCm);
         btn_CambiarModo = (Button)findViewById(R.id.btn_CambiarModo);
         edt_Cm = (EditText)findViewById(R.id.edt_Cm);
+        edt_Inches = (EditText)findViewById(R.id.edt_Inches);
         txv_Cm = (TextView)findViewById(R.id.txv_Cm);
+        txv_Inches = (TextView)findViewById(R.id.txv_Inches);
 
         //Implementing the onClick listener using anonymous class
         btn_ConvertirCm.setOnClickListener(new View.OnClickListener() {
@@ -58,14 +60,14 @@ public class Ejercicio2Activity extends AppCompatActivity {
         if(modoCentimentros){
             try{
                 double cm = Double.parseDouble(edt_Cm.getText().toString());
-                edt_Cm.setText(String.format(Locale.US, "%.2f", cmToInches(cm)));
+                edt_Inches.setText(String.format(Locale.US, "%.2f", cmToInches(cm)));
             }catch(NumberFormatException e){
 
             }
         }else{
             try{
                 double inches = Double.parseDouble(edt_Cm.getText().toString());
-                edt_Cm.setText(String.format(Locale.US, "%.2f", inchesToCm(inches)));
+                edt_Inches.setText(String.format(Locale.US, "%.2f", inchesToCm(inches)));
             }catch(NumberFormatException e){
 
             }
@@ -74,13 +76,30 @@ public class Ejercicio2Activity extends AppCompatActivity {
 
     private void changeMode(){
         if(modoCentimentros){
+                //Switch titles and visual style
                 edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_inch));
                 txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_inches));
+                edt_Inches.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_cm));
+                txv_Inches.setText(getResources().getString(R.string.txv_Cm_text_cm));
+
+                //Switch numeric values
+                String cm = edt_Cm.getText().toString();
+                edt_Cm.setText(edt_Inches.getText());
+                edt_Inches.setText(cm);
+
                 modoCentimentros = false;
 
         }else{
+                //Switch titles and visual style
                 edt_Cm.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_cm));
                 txv_Cm.setText(getResources().getString(R.string.txv_Cm_text_cm));
+                edt_Inches.setBackground(getResources().getDrawable(R.drawable.cm_edt_border_inch));
+                txv_Inches.setText(getResources().getString(R.string.txv_Cm_text_inches));
+
+                //Switch numeric values
+                String cm = edt_Inches.getText().toString();
+                edt_Inches.setText(edt_Cm.getText());
+                edt_Cm.setText(cm);
                 modoCentimentros = true;
         }
     }

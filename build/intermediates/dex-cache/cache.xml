@@ -3,156 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_fe9ca977fcf4b2c70d9ec13ce4d1bf3c0fadeb82\classes.dex" />
+        sha1="a44e824306d5414bf052f52aa76cb84942bbdf16">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e2c4fd9deb2b359943f91927fef9e7f34a66a207/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_564aca80ac82a1510b8b3570d0c742d03d3b0c58\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_c633e67a815b8ed0b67c919cc655e4bfda9f94d3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_573755f4d14311229407743bf56d428e37766899\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b699c7243870e957529796843526ba5d2112a7ac">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_948aaa8c72143d588be63d08a7af8f70a70ec687\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9762107c97ed44fda401efa6400355676588fcf6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_e91af75e5f8e4e99a2503c590e2b6ce97a9934c0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f52af809df9c2665cf198d20cc4a9ee557555486">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1dceb99d458148a006b386f46ae09911dae091e6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_786ac8c3ecdd060d5dc0a3b50c3f409eb3d9011f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_fadacc1428728b1725c7d97dfb169f011b250965\classes.dex" />
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_2f0635732c9e0e7e82c843e366da8df383631620/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_cd57bb68263c408882043d1d09181ce7fd6ad022\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_d3b6441660b8705fdc5c70798e306a5b130a8574\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_82b3262d4700c2be5ec69ef7b548930f4b79e4a3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_60b00098fdcc9695cc7281ae0f53770a221ae38f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_d52de07bd17bd58814573742a295a122b147c7e5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c15bfdc37bcec7c1155008a51182a2e85a1476b0\classes.dex" />
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c3d9bb37883f0e4f58a00c039c3b68288c33e82b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="620de9d34f2ee35db4f8b9865e2d2080be8a338f">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_88a5a1327eaa60db32f3ca7fc24de5311f4aba4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_186f5272d8f1da3d4a3358b3bb1f92ce0ecbcf39/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_133084ab40f67afe9b10eea8e936ddffafb8ee97/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6cc2e414f3402966e7b3f6f59e7f3770b85bfbfc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_d28a44a3ca47cd8522073fadc0a4891dd7f7fda4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_d8a6f9f79e61512a663abc4dcc7eb1af355e3b4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_84d2ad518481b6c3542e930f92ef101d4995552e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_8cec31edf14494802582307a3462b41cb5023246/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_763cc92bf108d5489acc0df583c1b5de387280ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d6b2fe74794be23535636cca05794dce9bb34843/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_e5ca74a653a7ac26ad70ff7f3025c32945d19cbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_10d0d2c10144257b48f1e50b20c0530a297e7ff8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_eb44b98a896fce3e2f1d98ca23500ff82662ef89\classes.dex" />
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_8cef269aeb17c910df669b09885d6c7ebb0cb704/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_b02d16ae4bead47b13521365685bd203a5c14592/classes.dex" />
     </item>
 
 </items>
