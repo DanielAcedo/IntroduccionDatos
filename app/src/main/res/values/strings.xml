@@ -26,4 +26,12 @@
     <string name="txv_Cm_text_inches">Pulgadas</string>
     <string name="btn_CambiarModo_text">Cambiar modo</string>
 
+    <!-- Ejercicio 4-->
+    <string name="ej4_title">Contador de cafés</string>
+    <string name="txv_CoffeeCounterTitle">Cafés</string>
+    <string name="txv_CoffeeCounter_Default">0</string>
+    <string name="txv_TimeCounter">00:00</string>
+    <string name="txv_TimeCounter_finished">Terminado!</string>
+    <string name="btn_StartCounter">Empezar</string>
+
 </resources>

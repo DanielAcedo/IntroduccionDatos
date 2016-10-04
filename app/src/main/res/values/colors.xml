@@ -6,4 +6,5 @@
     <color name="background_color">#b0bec5</color>
     <color name="border_color_cm">#6200ea</color>
     <color name="border_color_inch">#e57373</color>
+    <color name="ej4_CoffeeCounterTitle">#0091ea</color>
 </resources>
