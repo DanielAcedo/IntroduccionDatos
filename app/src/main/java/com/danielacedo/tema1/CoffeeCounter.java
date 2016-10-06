@@ -35,7 +35,7 @@ public class CoffeeCounter{
             return;
         }
 
-        if(secondsCountDown!=0 && minutesCountDown!=0){
+        if(secondsCountDown!=0){
             secondsCountDown--;
             return;
         }
@@ -69,7 +69,12 @@ public class CoffeeCounter{
     }
 
     public String formatTime(){
-        return String.format("00",minutesCountDown)+":"+String.format("00", secondsCountDown);
+        return String.format("%02d",minutesCountDown)+":"+String.format("%02d", secondsCountDown);
+    }
+
+    public void resetTime(){
+        secondsCountDown = 0;
+        minutesCountDown = 0;
     }
 
     public long toMillis(){

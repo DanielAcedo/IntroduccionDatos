@@ -52,7 +52,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/btn_AddTime" />
+            android:id="@+id/btn_SubtractTime" />
 
         <Button
             android:text="+"
@@ -61,7 +61,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/btn_SubtractTime" />
+            android:id="@+id/btn_AddTime" />
 
         <TextView
             android:text="@string/txv_TimeCounter"

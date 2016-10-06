@@ -3,6 +3,7 @@ package com.danielacedo.tema1;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ public class Ejercicio4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 coffeeCounter.addTime();
+                refreshTimerDisplay();
             }
         });
 
@@ -38,6 +40,7 @@ public class Ejercicio4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 coffeeCounter.substractTime();
+                refreshTimerDisplay();
             }
         });
 
@@ -60,12 +63,13 @@ public class Ejercicio4Activity extends AppCompatActivity {
     }
 
     public void refreshCoffeeCount(){
-        txv_CoffeeCounter.setText(coffeeCounter.getCoffees());
+        txv_CoffeeCounter.setText(String.valueOf(coffeeCounter.getCoffees()));
     }
 
     public void timerFinished(){
-        txv_TimeCounter.setText(R.string.txv_TimeCounter_finished);
+        txv_TimeCounter.setText("Terminado");
         coffeeCounter.addCoffee();
+        refreshCoffeeCount();
     }
 
     public class CoffeeTimer extends CountDownTimer {
@@ -83,6 +87,8 @@ public class Ejercicio4Activity extends AppCompatActivity {
         @Override
         public void onFinish() {
             timerFinished();
+            coffeeCounter.resetTime();
+
         }
     }
 }
