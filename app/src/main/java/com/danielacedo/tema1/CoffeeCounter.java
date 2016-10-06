@@ -84,6 +84,12 @@ public class CoffeeCounter{
         return secondsInMillis+minutesInMillis;
     }
 
+    public void storeTimeInMillis(long millis){
+        minutesCountDown = (int)(millis/1000)/60;
+        secondsCountDown = (int)(millis/1000)%60;
+
+    }
+
     public void dumpToPause(){
         minutesPaused = minutesCountDown;
         secondsPaused = secondsCountDown;

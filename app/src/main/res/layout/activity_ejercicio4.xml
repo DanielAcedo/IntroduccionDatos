@@ -73,13 +73,21 @@
             android:id="@+id/txv_TimeCounter" />
 
         <Button
+            android:text="@string/btn_Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_StartCounter"
+            android:layout_toRightOf="@+id/btn_StartCounter"
+            android:id="@+id/btn_Pause" />
+
+        <Button
             android:text="@string/btn_StartCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="161dp"
-            android:id="@+id/btn_StartCounter" />
+            android:id="@+id/btn_StartCounter"
+            android:layout_below="@+id/btn_SubtractTime"
+            android:layout_toRightOf="@+id/btn_SubtractTime"
+            android:layout_marginLeft="11dp" />
     </RelativeLayout>
 
 </RelativeLayout>

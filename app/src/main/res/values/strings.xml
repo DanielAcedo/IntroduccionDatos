@@ -33,5 +33,8 @@
     <string name="txv_TimeCounter">00:00</string>
     <string name="txv_TimeCounter_finished">Terminado!</string>
     <string name="btn_StartCounter">Empezar</string>
+    <string name="btn_Pause">Pausar</string>
+    <string name="btn_Pause_Restart">Reanudar</string>
+
 
 </resources>
