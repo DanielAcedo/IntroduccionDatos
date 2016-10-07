@@ -84,6 +84,11 @@ public class CoffeeCounter{
         return secondsCountDown;
     }
 
+    /**
+     * Returns the number of coffee breaks
+     * @return Coffee breaks
+     * @author Daniel Acedo Calderón
+     */
     public int getCoffees() {
         return coffees;
     }

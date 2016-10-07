@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -11,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d033d5-44cc-45dc-98a2-9ccfac38e13b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/CoffeeTimer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/CoffeeCounter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/CoffeeCounter.java" />
     </list>
@@ -94,21 +97,12 @@
       <file leaf-file-name="CoffeeCounter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/CoffeeCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
               <folding>
                 <element signature="docComment;class#CoffeeCounter#0" expanded="false" />
                 <element signature="method#CoffeeCounter#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#addTime#0;class#CoffeeCounter#0" expanded="false" />
                 <element signature="method#addTime#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#addCoffee#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#getMinutesCountDown#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#getSecondsCountDown#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#formatTime#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#resetTime#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#toMillis#0;class#CoffeeCounter#0" expanded="false" />
-                <element signature="docComment;method#storeTimeInMillis#0;class#CoffeeCounter#0" expanded="false" />
-                <marker date="1475843862194" expanded="false" signature="586:685" ph="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -2341,7 +2335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475843279738</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Comentado el codigo de la clase CoffeeCounter">
+      <created>1475843878498</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1475843878498</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2357,7 +2358,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2365,11 +2366,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24498886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24498886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2380,7 +2382,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2442,7 +2443,8 @@
     <MESSAGE value="Contador funcional" />
     <MESSAGE value="Añadida funcion de pausa al contador" />
     <MESSAGE value="Mejora de sincronizacion del temporizador y control de estados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejora de sincronizacion del temporizador y control de estados" />
+    <MESSAGE value="Comentado el codigo de la clase CoffeeCounter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentado el codigo de la clase CoffeeCounter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2664,6 +2666,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2771,21 +2774,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/CoffeeCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding>
             <element signature="docComment;class#CoffeeCounter#0" expanded="false" />
             <element signature="method#CoffeeCounter#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#addTime#0;class#CoffeeCounter#0" expanded="false" />
             <element signature="method#addTime#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#addCoffee#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#getMinutesCountDown#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#getSecondsCountDown#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#formatTime#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#resetTime#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#toMillis#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="docComment;method#storeTimeInMillis#0;class#CoffeeCounter#0" expanded="false" />
-            <marker date="1475843862194" expanded="false" signature="586:685" ph="/**...*/" />
           </folding>
         </state>
       </provider>
