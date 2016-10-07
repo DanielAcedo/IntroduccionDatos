@@ -3,14 +3,14 @@ package com.danielacedo.tema1;
 import android.os.CountDownTimer;
 
 /**
- * Created by usuario on 4/10/16.
+ * Created by Daniel on 4/10/16.
  */
 
+/**
+ * Intermediate class between the timer and the view. It stores the current time and number of coffee breaks.
+ * @author Daniel Acedo Calderón
+ */
 public class CoffeeCounter{
-
-    //Variables for a yet to implement pause mechanic
-    private int minutesPaused;
-    private int secondsPaused;
 
     //The time your coffee break lasts
     private int minutesCountDown;
@@ -22,11 +22,13 @@ public class CoffeeCounter{
     public CoffeeCounter(){
         this.minutesCountDown = 0;
         this.secondsCountDown = 0;
-        this.minutesPaused = 0;
-        this.secondsPaused = 0;
         this.coffees = 0;
     }
 
+    /**
+     * Substracts one second out of the total time
+     * @author Daniel Acedo Calderón
+     */
     public void substractTime(){
         if(secondsCountDown==0 && minutesCountDown!=0){
             minutesCountDown--;
@@ -41,6 +43,10 @@ public class CoffeeCounter{
         }
     }
 
+    /**
+     * Adds one seconds to the total time
+     * @author Daniel Acedo Calderón
+     */
     public void addTime(){
         if(secondsCountDown==59){
             minutesCountDown++;
@@ -52,14 +58,28 @@ public class CoffeeCounter{
         secondsCountDown++;
     }
 
+    /**
+     * Adds one coffee break to the counter
+     * @author Daniel Acedo Calderón
+     */
     public void addCoffee(){
         coffees++;
     }
 
+    /**
+     * Returns the number of minutes
+     * @return Current minutes
+     * @author Daniel Acedo Calderón
+     */
     public int getMinutesCountDown() {
         return minutesCountDown;
     }
 
+    /**
+     * Returns the number of seconds
+     * @return current seconds
+     * @author Daniel Acedo Calderón
+     */
     public int getSecondsCountDown() {
         return secondsCountDown;
     }
@@ -68,15 +88,29 @@ public class CoffeeCounter{
         return coffees;
     }
 
+    /**
+     * Returns the time as a string suitable for the view to display (mm:ss)
+     * @return Formatted time mm:ss
+     * @author Daniel Acedo Calderón
+     */
     public String formatTime(){
         return String.format("%02d",minutesCountDown)+":"+String.format("%02d", secondsCountDown);
     }
 
+    /**
+     * Resets the time to zero
+     * @author Daniel Acedo Calderón
+     */
     public void resetTime(){
         secondsCountDown = 0;
         minutesCountDown = 0;
     }
 
+    /**
+     * Converts the total time to milliseconds
+     * @return The time in milliseconds
+     * @author Daniel Acedo Calderón
+     */
     public long toMillis(){
         long secondsInMillis = secondsCountDown * 1000;
         long minutesInMillis = minutesCountDown * 60 * 1000;
@@ -84,16 +118,16 @@ public class CoffeeCounter{
         return secondsInMillis+minutesInMillis;
     }
 
+    /**
+     * Converts the time in milliseconds to seconds and minutes
+     * @param millis Milliseconds to convert
+     */
     public void storeTimeInMillis(long millis){
         minutesCountDown = (int)(millis/1000)/60;
         secondsCountDown = (int)(millis/1000)%60;
 
     }
 
-    public void dumpToPause(){
-        minutesPaused = minutesCountDown;
-        secondsPaused = secondsCountDown;
-    }
 
 
 }
