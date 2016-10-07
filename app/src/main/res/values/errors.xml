@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_Timer_Start_Zero">El contador no puede estar a cero</string>
+</resources>
