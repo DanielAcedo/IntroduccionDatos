@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="err_Timer_Start_Zero">El contador no puede estar a cero</string>
+    <string name="err_Play_FinishTimer">El sonido no se puede reproducir</string>
 </resources>

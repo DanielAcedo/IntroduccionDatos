@@ -112,6 +112,14 @@ public class CoffeeCounter{
     }
 
     /**
+     * Resets the coffees to zero
+     * @author Daniel Acedo Calderón
+     */
+    public void resetCoffees(){
+        coffees = 0;
+    }
+
+    /**
      * Converts the total time to milliseconds
      * @return The time in milliseconds
      * @author Daniel Acedo Calderón

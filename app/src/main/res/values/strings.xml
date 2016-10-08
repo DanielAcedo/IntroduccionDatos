@@ -36,6 +36,9 @@
     <string name="btn_StartCounter_Cancel">Cancelar</string>
     <string name="btn_Pause">Pausar</string>
     <string name="btn_Pause_Restart">Reanudar</string>
+    <string name="btn_Restart">Reiniciar</string>
+    <string name="warning_CoffeeLimit_Title">Aviso</string>
+    <string name="warning_CoffeeLimit_Body">Limite de cafés superados</string>
 
 
 </resources>

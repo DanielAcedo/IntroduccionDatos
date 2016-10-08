@@ -88,6 +88,16 @@
             android:layout_below="@+id/btn_SubtractTime"
             android:layout_toRightOf="@+id/btn_SubtractTime"
             android:layout_marginLeft="11dp" />
+
+        <Button
+            android:text="@string/btn_Restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:visibility="gone"
+            android:id="@+id/btn_Restart" />
     </RelativeLayout>
 
 </RelativeLayout>
