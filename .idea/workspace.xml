@@ -14,22 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d033d5-44cc-45dc-98a2-9ccfac38e13b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio3Activity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ejercicio3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/MenuActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/MenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio3Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio3Activity.java" />
     </list>
     <ignored path="IntroduccionADatos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,12 +96,11 @@
       <file leaf-file-name="Ejercicio3Activity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio3Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+            <state relative-caret-position="307">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="e#887#905#0" expanded="true" />
                 <element signature="e#1184#1523#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2349,12 +2334,19 @@
       <option name="project" value="LOCAL" />
       <updated>1475921095044</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Añadido ejercicio de navegador web">
+      <created>1475947913688</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1475947913688</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2365,7 +2357,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2452,7 +2444,8 @@
     <MESSAGE value="Mejora de sincronizacion del temporizador y control de estados" />
     <MESSAGE value="Comentado el codigo de la clase CoffeeCounter" />
     <MESSAGE value="Añadido sonido al completar el temporizador y un limite de cafes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadido sonido al completar el temporizador y un limite de cafes" />
+    <MESSAGE value="Añadido ejercicio de navegador web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido ejercicio de navegador web" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2679,8 +2672,8 @@
             <element signature="docComment;class#CoffeeCounter#0" expanded="false" />
             <element signature="method#CoffeeCounter#0;class#CoffeeCounter#0" expanded="false" />
             <element signature="method#addTime#0;class#CoffeeCounter#0" expanded="false" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="false" />
+            <element signature="e#2629#2630#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2698,16 +2691,16 @@
         <state relative-caret-position="412">
           <caret line="171" column="34" selection-start-line="171" selection-start-column="34" selection-end-line="171" selection-end-column="34" />
           <folding>
-            <element signature="e#2747#2901#0" expanded="true" />
-            <element signature="e#2900#2901#0" expanded="true" />
+            <element signature="e#2747#2901#0" expanded="false" />
+            <element signature="e#2900#2901#0" expanded="false" />
             <element signature="method#startTimer#0;class#Ejercicio4Activity#0" expanded="false" />
             <element signature="method#handleStartButton#0;class#Ejercicio4Activity#0" expanded="false" />
             <element signature="method#refreshCoffeeCount#0;class#Ejercicio4Activity#0" expanded="false" />
             <element signature="method#timerFinished#0;class#Ejercicio4Activity#0" expanded="false" />
-            <element signature="e#6219#6298#0" expanded="true" />
+            <element signature="e#6219#6298#0" expanded="false" />
             <element signature="method#checkCoffeesLimit#0;class#Ejercicio4Activity#0" expanded="false" />
-            <element signature="e#6597#6681#0" expanded="true" />
-            <element signature="e#6713#6796#0" expanded="true" />
+            <element signature="e#6597#6681#0" expanded="false" />
+            <element signature="e#6713#6796#0" expanded="false" />
             <element signature="method#restart_Coffees#0;class#Ejercicio4Activity#0" expanded="false" />
             <element signature="class#CoffeeTimer#0;class#Ejercicio4Activity#0" expanded="false" />
           </folding>
@@ -2786,12 +2779,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio3Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        <state relative-caret-position="307">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="e#887#905#0" expanded="true" />
             <element signature="e#1184#1523#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
           </folding>
         </state>
       </provider>
