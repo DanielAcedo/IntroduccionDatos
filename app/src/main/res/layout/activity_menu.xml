@@ -39,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_Ejercicio3"
+            android:onClick="onClick"
             android:layout_marginBottom="30dp" />
 
         <Button

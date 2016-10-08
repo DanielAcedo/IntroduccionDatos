@@ -25,6 +25,10 @@ public class MenuActivity extends AppCompatActivity {
                 intento = new Intent(this, Ejercicio2Activity.class);
                 startActivity(intento);
                 break;
+            case R.id.btn_Ejercicio3:
+                intento = new Intent(this, Ejercicio3Activity.class);
+                startActivity(intento);
+                break;
             case R.id.btn_Ejercicio4:
                 intento = new Intent(this, Ejercicio4Activity.class);
                 startActivity(intento);

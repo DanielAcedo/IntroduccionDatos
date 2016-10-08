@@ -26,6 +26,11 @@
     <string name="txv_Cm_text_inches">Pulgadas</string>
     <string name="btn_CambiarModo_text">Cambiar modo</string>
 
+    <!-- Ejercicio 3 -->
+    <string name="ej3_title">Visor Web</string>
+    <string name="txv_LinkEntry">Escribe el enlace web</string>
+    <string name="btn_OkWeb">Ir</string>
+
     <!-- Ejercicio 4-->
     <string name="ej4_title">Contador de cafés</string>
     <string name="txv_CoffeeCounterTitle">Cafés</string>
