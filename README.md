@@ -11,3 +11,9 @@ He modificado y expandido el ejercicio incorporándole una llamada HTTP a la api
 En el caso de no haber conexión se usará un ratio fijo marcado en el código.
 
 ![Ej1.JPG](https://bitbucket.org/repo/9rMrdL/images/196902422-Ej1.JPG) ![Ej1NoConexion.JPG](https://bitbucket.org/repo/9rMrdL/images/2518624938-Ej1NoConexion.JPG)
+
+## Ejercicio 2 ##
+
+Se trata de un conversor de centímetros a pulgadas y viceversa. Le he añadido un cambio de modo con marcos de diferente color para elegir si quieres introducir los centímetros y se conviertan a pulgadas, o al contrario.
+
+![Ej2.JPG](https://bitbucket.org/repo/9rMrdL/images/2982653860-Ej2.JPG)
