@@ -13,7 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by usuario on 27/09/16.
+ * Created by Daniel on 27/09/16.
  */
 
 public class Conversion {
@@ -29,7 +29,7 @@ public class Conversion {
     }
 
     public Conversion(String codDivisa, double ratioActual){
-        this.codDivisa =codDivisa;
+        this.codDivisa = codDivisa;
         this.ratioActual = ratioActual;
     }
 
