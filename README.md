@@ -10,4 +10,4 @@ He modificado y expandido el ejercicio incorporándole una llamada HTTP a la api
 
 En el caso de no haber conexión se usará un ratio fijo marcado en el código.
 
-![Ej1.JPG](https://bitbucket.org/repo/9rMrdL/images/196902422-Ej1.JPG) ![Ej1NoConexion.JPG](https://bitbucket.org/repo/9rMrdL/images/1826379029-Ej1NoConexion.JPG)
+![Ej1.JPG](https://bitbucket.org/repo/9rMrdL/images/196902422-Ej1.JPG) ![Ej1NoConexion.JPG](https://bitbucket.org/repo/9rMrdL/images/2518624938-Ej1NoConexion.JPG)
