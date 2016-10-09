@@ -16,4 +16,4 @@ En el caso de no haber conexión se usará un ratio fijo marcado en el código.
 
 Se trata de un conversor de centímetros a pulgadas y viceversa. Le he añadido un cambio de modo con marcos de diferente color para elegir si quieres introducir los centímetros y se conviertan a pulgadas, o al contrario.
 
-![Ej2.JPG](https://bitbucket.org/repo/9rMrdL/images/2982653860-Ej2.JPG)
+![Ej2.JPG](https://bitbucket.org/repo/9rMrdL/images/2982653860-Ej2.JPG) ![Ej2Inverso.JPG](https://bitbucket.org/repo/9rMrdL/images/483431182-Ej2Inverso.JPG)
