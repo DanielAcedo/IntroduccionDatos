@@ -31,6 +31,7 @@ Esta aplicación tiene algo más de complejidad. Su función es ser un contador 
 También he añadido un selector más preciso para poder añadir o restar segundos y minutos. Otra de las cosas que he añadido es la opción de poder pausar el temporizador en cualquier momento. Una vez hecho esto puedes reanudarlo por donde lo dejaste o cancelar el temporizador y volver a la pantalla de selección (también puedes cancelar mientras el temporizador está corriendo).
 
 ![Ej4Corriendo.JPG](https://bitbucket.org/repo/9rMrdL/images/2405191199-Ej4Corriendo.JPG) ![Ej4Pausado.JPG](https://bitbucket.org/repo/9rMrdL/images/130107962-Ej4Pausado.JPG)
+
 ![Ej4Seleccion.JPG](https://bitbucket.org/repo/9rMrdL/images/4134163582-Ej4Seleccion.JPG) ![Ej4Terminado.JPG](https://bitbucket.org/repo/9rMrdL/images/2995933241-Ej4Terminado.JPG)
 
 ## Ejercicio 5 ##
