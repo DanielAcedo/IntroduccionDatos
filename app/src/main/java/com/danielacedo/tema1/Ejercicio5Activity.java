@@ -215,6 +215,7 @@ public class Ejercicio5Activity extends AppCompatActivity {
                         json+=(char)data;
                     }
 
+                    in.close();
                     tratarJSON(json);
                 }catch(IOException e){
                     Toast.makeText(Ejercicio5Activity.this, "No hay datos anteriores. Intenta conectar al menos una vez con el servidor", Toast.LENGTH_SHORT).show();

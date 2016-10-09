@@ -13,24 +13,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35d033d5-44cc-45dc-98a2-9ccfac38e13b" name="Default" comment="Terminado ejercicio 5. Añadido fichero local para">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio5Activity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ejercicio5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+    <list default="true" id="35d033d5-44cc-45dc-98a2-9ccfac38e13b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Conversion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Conversion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/MenuActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/MenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio5Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio5Activity.java" />
     </list>
     <ignored path="IntroduccionADatos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,8 +96,8 @@
       <file leaf-file-name="Ejercicio5Activity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio5Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="219" column="61" selection-start-line="219" selection-start-column="61" selection-end-line="219" selection-end-column="61" />
+            <state relative-caret-position="355">
+              <caret line="217" column="31" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
               <folding>
                 <element signature="e#1628#1646#0" expanded="true" />
                 <element signature="method#onClick#0;class#Ejercicio5Activity#0" expanded="false" />
@@ -126,11 +111,11 @@
                 <element signature="e#5220#5259#0" expanded="true" />
                 <element signature="e#5376#5377#0" expanded="true" />
                 <element signature="e#5444#5445#0" expanded="true" />
-                <element signature="e#8479#8542#0" expanded="true" />
-                <element signature="e#8685#8718#0" expanded="true" />
+                <element signature="e#8511#8574#0" expanded="true" />
+                <element signature="e#8717#8750#0" expanded="true" />
                 <element signature="method#tratarJSON#0;class#GetHttpResponse#0;class#Ejercicio5Activity#0" expanded="false" />
-                <element signature="e#9369#9377#0" expanded="true" />
-                <element signature="e#9564#9572#0" expanded="true" />
+                <element signature="e#9401#9409#0" expanded="true" />
+                <element signature="e#9596#9604#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2364,7 +2349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475958532595</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Terminado ejercicio 5. Añadido fichero local en caso de que no haya internet.">
+      <created>1476028875800</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1476028875800</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2468,7 +2460,8 @@
     <MESSAGE value="Comentado el codigo de la clase CoffeeCounter" />
     <MESSAGE value="Añadido sonido al completar el temporizador y un limite de cafes" />
     <MESSAGE value="Añadido ejercicio de navegador web" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadido ejercicio de navegador web" />
+    <MESSAGE value="Terminado ejercicio 5. Añadido fichero local en caso de que no haya internet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminado ejercicio 5. Añadido fichero local en caso de que no haya internet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2784,8 +2777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielacedo/tema1/Ejercicio5Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="219" column="61" selection-start-line="219" selection-start-column="61" selection-end-line="219" selection-end-column="61" />
+        <state relative-caret-position="355">
+          <caret line="217" column="31" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
           <folding>
             <element signature="e#1628#1646#0" expanded="true" />
             <element signature="method#onClick#0;class#Ejercicio5Activity#0" expanded="false" />
@@ -2799,11 +2792,11 @@
             <element signature="e#5220#5259#0" expanded="true" />
             <element signature="e#5376#5377#0" expanded="true" />
             <element signature="e#5444#5445#0" expanded="true" />
-            <element signature="e#8479#8542#0" expanded="true" />
-            <element signature="e#8685#8718#0" expanded="true" />
+            <element signature="e#8511#8574#0" expanded="true" />
+            <element signature="e#8717#8750#0" expanded="true" />
             <element signature="method#tratarJSON#0;class#GetHttpResponse#0;class#Ejercicio5Activity#0" expanded="false" />
-            <element signature="e#9369#9377#0" expanded="true" />
-            <element signature="e#9564#9572#0" expanded="true" />
+            <element signature="e#9401#9409#0" expanded="true" />
+            <element signature="e#9596#9604#0" expanded="true" />
           </folding>
         </state>
       </provider>
