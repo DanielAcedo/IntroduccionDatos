@@ -35,3 +35,7 @@ También he añadido un selector más preciso para poder añadir o restar segund
 ![Ej4Seleccion.JPG](https://bitbucket.org/repo/9rMrdL/images/4134163582-Ej4Seleccion.JPG) ![Ej4Terminado.JPG](https://bitbucket.org/repo/9rMrdL/images/2995933241-Ej4Terminado.JPG)
 
 ## Ejercicio 5 ##
+
+Ejercicio libre. En mi caso he cogido como base el ejercicio 1 de conversión de divisas y lo he ampliado. Le he añadido una opción para poder convertir de cualquier otra moneda soportada por la API a euros. También, cada vez que actualices los ratios con el servidor se guardarán los datos recogidos en un fichero para que, en el caso de que no haya conexión a la red, se puedan obtener los ratios de la última actualización hecha. Para usar esta característica hace falta haberse conectado al menos una vez al servidor.
+
+![Ej5Seleccion.JPG](https://bitbucket.org/repo/9rMrdL/images/3278273397-Ej5Seleccion.JPG) ![Ej5ArchivoLocal.JPG](https://bitbucket.org/repo/9rMrdL/images/3429254710-Ej5ArchivoLocal.JPG)
