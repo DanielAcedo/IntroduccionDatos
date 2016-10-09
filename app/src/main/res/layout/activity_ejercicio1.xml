@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txv_InfoDivisa"
         android:textSize="16sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/btn_ActualizarRatio"
         android:layout_centerHorizontal="true" />
 

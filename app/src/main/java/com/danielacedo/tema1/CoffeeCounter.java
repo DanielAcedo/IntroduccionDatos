@@ -67,6 +67,24 @@ public class CoffeeCounter{
     }
 
     /**
+     * Adds one minute to the countdown
+     * @author Daniel Acedo Calderón
+     */
+    public void addMinute(){
+        minutesCountDown++;
+    }
+
+    /**
+     * Substract one minute from the countdown
+     * @author Daniel Acedo Calderón
+     */
+    public void substractMinute(){
+        if(minutesCountDown>0){
+            minutesCountDown--;
+        }
+    }
+
+    /**
      * Returns the number of minutes
      * @return Current minutes
      * @author Daniel Acedo Calderón

@@ -20,7 +20,7 @@ public class Ejercicio4Activity extends AppCompatActivity {
     private final int COFFEE_LIMIT = 10; //Number of coffees that will trigger the warning
 
     private TextView txv_CoffeeCounter, txv_TimeCounter;
-    private Button btn_AddTime, btn_SubstractTime, btn_StartCounter, btn_Pause, btn_Restart;
+    private Button btn_AddTime, btn_SubstractTime, btn_StartCounter, btn_Pause, btn_Restart, btn_AddMinute, btn_SubtractMinute;
     private CoffeeTimer coffeeTimer;
     private CoffeeCounter coffeeCounter;
     private MediaPlayer mp;
@@ -44,6 +44,8 @@ public class Ejercicio4Activity extends AppCompatActivity {
         btn_StartCounter = (Button)findViewById(R.id.btn_StartCounter);
         btn_Pause = (Button)findViewById(R.id.btn_Pause);
         btn_Restart = (Button)findViewById(R.id.btn_Restart);
+        btn_AddMinute = (Button)findViewById(R.id.btn_AddMinute);
+        btn_SubtractMinute = (Button)findViewById(R.id.btn_SubtractMinute);
         coffeeCounter = new CoffeeCounter();
 
         btn_AddTime.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +85,22 @@ public class Ejercicio4Activity extends AppCompatActivity {
                 restart_Coffees();
             }
         });
+
+        btn_AddMinute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                coffeeCounter.addMinute();
+                refreshTimerDisplay();
+            }
+        });
+
+        btn_SubtractMinute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                coffeeCounter.substractMinute();
+                refreshTimerDisplay();
+            }
+        });
     }
 
     public void startTimer(){
@@ -109,6 +127,8 @@ public class Ejercicio4Activity extends AppCompatActivity {
             btn_Pause.setEnabled(false);
             btn_AddTime.setEnabled(true);
             btn_SubstractTime.setEnabled(true);
+            btn_SubtractMinute.setEnabled(true);
+            btn_AddMinute.setEnabled(true);
             refreshTimerDisplay();
         }else{
             if(coffeeCounter.getMinutesCountDown() == 0 && coffeeCounter.getSecondsCountDown() == 0){
@@ -117,6 +137,8 @@ public class Ejercicio4Activity extends AppCompatActivity {
                 startTimer();
                 btn_AddTime.setEnabled(false);
                 btn_SubstractTime.setEnabled(false);
+                btn_AddMinute.setEnabled(false);
+                btn_SubtractMinute.setEnabled(false);
             }
 
         }
@@ -151,6 +173,8 @@ public class Ejercicio4Activity extends AppCompatActivity {
         btn_Pause.setEnabled(false);
         btn_AddTime.setEnabled(true);
         btn_SubstractTime.setEnabled(true);
+        btn_AddMinute.setEnabled(true);
+        btn_SubtractMinute.setEnabled(true);
         btn_Pause.setText(getResources().getString(R.string.btn_Pause));
         btn_StartCounter.setText(getResources().getString(R.string.btn_StartCounter));
         coffeeCounter.resetTime();
@@ -190,6 +214,10 @@ public class Ejercicio4Activity extends AppCompatActivity {
             btn_Restart.setVisibility(View.VISIBLE);
             btn_StartCounter.setEnabled(false);
             btn_Pause.setEnabled(false);
+            btn_AddTime.setEnabled(false);
+            btn_SubstractTime.setEnabled(false);
+            btn_AddMinute.setEnabled(false);
+            btn_SubtractMinute.setEnabled(false);
 
         }
     }
@@ -202,6 +230,10 @@ public class Ejercicio4Activity extends AppCompatActivity {
             btn_Restart.setVisibility(View.GONE);
             btn_StartCounter.setEnabled(true);
             btn_Pause.setEnabled(true);
+            btn_AddTime.setEnabled(true);
+            btn_SubstractTime.setEnabled(true);
+            btn_AddMinute.setEnabled(true);
+            btn_SubtractMinute.setEnabled(true);
         }
     }
 
