@@ -1,7 +1,7 @@
 # Ejercicio de Introducción para la asignatura Acceso a Datos #
 ### Por Daniel Acedo Calderón ###
 
-# Descripción de los ejercicios #
+# Descripción de los ejercicios #![Ej1NoConexion.JPG](https://bitbucket.org/repo/9rMrdL/images/1826379029-Ej1NoConexion.JPG)
 
 ## Ejercicio 1 ##
 
@@ -10,4 +10,4 @@ He modificado y expandido el ejercicio incorporándole una llamada HTTP a la api
 
 En el caso de no haber conexión se usará un ratio fijo marcado en el código.
 
-![Ej1.JPG](https://bitbucket.org/repo/9rMrdL/images/196902422-Ej1.JPG)
+![Ej1.JPG](https://bitbucket.org/repo/9rMrdL/images/196902422-Ej1.JPG) 
