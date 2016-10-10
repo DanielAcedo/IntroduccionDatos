@@ -261,6 +261,9 @@ public class Ejercicio5Activity extends AppCompatActivity {
                 ArrayAdapter<String> paisesAdapter = new ArrayAdapter<String>(Ejercicio5Activity.this, android.R.layout.simple_spinner_item, paises);
                 paisesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spn_SelectCountry.setAdapter(paisesAdapter);
+                edt_Dolares.setText("0.00");
+                edt_Euros.setText("0.00");
+
 
             }catch (JSONException e){
                 error=true;

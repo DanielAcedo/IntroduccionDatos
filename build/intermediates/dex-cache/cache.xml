@@ -3,57 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_791c1f2509fa9477655f8d36ffadd77b6953d6dc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="c93325cbf5852f7f34a27edf85dcacc32f2ae93a">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a7ef33f6cfea096a3e920e677c16c8bec0425eac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="I:\Daniel\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_c49e83e7b712a5e53fefa8eaa9bbe411b873fe67\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_19d4000cfc019462ecbb713e48d887ce25328e6f\classes.dex" />
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.1_f86cde1373d08d911622524237401e4cee2bd13a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jar="/home/usuario/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_4b85a68121b5fa8a8aafe0d85a38f33df1bd2704/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5e80c629cd1d26856b3dcbcfb84bf3f063da6828">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_88a5a1327eaa60db32f3ca7fc24de5311f4aba4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_ea597fb6d94d8e5a053eb3984e133f7683ea7812\classes.dex" />
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_c549d3ed3fb813424b572b7c0b0b1a3d73526b8b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="3858c5b4f5919cf17c23d38f1974d5d2a8acf078">
-        <dex dex="I:\Daniel\AndroidStudioProjects\IntroduccionDatos\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_30b4ef18280ddea530e4aeb69b35b0e4d69e8bd2\classes.dex" />
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_86aed0e38719912461677e6ce4210fda35511532/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4cbfa5f8242555f8627815ce76f695ca3e0dc5f7">
+        <dex dex="/home/usuario/AndroidStudioProjects/IntroduccionADatos/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e2c4fd9deb2b359943f91927fef9e7f34a66a207/classes.dex" />
     </item>
 
 </items>
